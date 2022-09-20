@@ -12,7 +12,7 @@ int check_cycle(listint_t *head)
 
 	if (!head || !(head->next))
 		return (0);
-	while (slow && fast && fast->next
+	while (slow && fast && fast->next)
 	{
 		slow = slow->next;
 		fast = fast->next->next;
