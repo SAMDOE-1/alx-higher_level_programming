@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-import hidden_4 as 
-
-if __name__ == '__main__':
-    names = filter(lambda n: not n.startswith('__'), dir(h))
-    for name in names:
-        print(name)
+if __name__ == "__main__":
+    import hidden_4
+    all_dir = dir(hidden_4)
+    avoid = "__"
+    for i in range(0, len(all_dir)):
+        if avoid not in all_dir[i]:
+            print(all_dir[i])
